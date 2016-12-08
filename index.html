@@ -1,562 +1,260 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=gbk"></meta></head><body><style>html,body,div,p{margin:0;padding:0}
-         body{font-size:14px;font-family:"microsoft yahei";background-color:#ffffff}
-         table{border-collapse:collapse;border-spacing:0;table-layout:fixed}
-         th,td{font-size:12px;padding:0}
-         a{text-decoration:none}
-         img{border:0 none}
-         .chead{width:734px}
-         .chead .logo{width:434px;height:90px}
-         .chead .txt{width:150px;height:90px}
-         .blue{text-decoration:none;color:#3c3d5d}
-         .column{width:734px;line-height:28px;border:1px solid #dedede}
-         .column .hbox{width:125px;height:154px}
-         .column .head{display:block;background-color:#fafafa}
-         .column .box{width:100%;background-color:#ffffff;border-top:2px solid #f2f3f5}
-         .column .box1{width:100%;word-wrap:break-word;color:#ffffff;background-color:#3f4160}
-         .column .box2{width:100%;background-color:#f8f9fa}
-         .column .tba{width:702px;padding:0 15px 15px}
-         .column .tbb{width:702px;padding:0 15px}
-         .column .tb1{width:682px;line-height:28px;color:#333333;word-break:break-all;padding:0 10px}
-         .column .tb2{width:331px;padding:0 10px}
-         .column .tb3{width:682px;padding:15px 10px 15px 0}
-         .column .gray,.column .gray2{color:#999999;word-break:break-all}
-         .column .gray2{color:#666666}
-         .column .plate1,.column .plate2{width:342px;height:54px;font-size:16px;font-weight:bold;color:#818ba3}
-         .column .plate1{width:682px;padding:0 25px}
-         .column .plate1 .f16{font-size:14px;font-weight:normal;color:#333333}
-         .column .plate1 .f12{font-size:12px;font-weight:normal;color:#999999}
-         .column .keys,.column .keys2{width:85px;line-height:28px;color:#666666}
-         .column .keys2{width:100px}
-         .column .txt1,.column .txt2,.column .txt3{width:597px;line-height:28px;color:#333333;word-break:break-all}
-         .column .txt2{width:246px}
-         .column .txt3{font-size:14px;font-weight:bold}
-         .column .txt4{width:240px;color:#ffffff;word-break:break-all}
-         .column .infr{width:587px;color:#ffffff;table-layout:auto}
-         .column .vam,.column .grcha{vertical-align:middle;margin-left:5px}
-         .column .box1 .vam{margin-right:5px;margin-left:0}
-         .column .name{font-size:24px;padding-bottom:18px}
-         .column .icard{color:#a1a3ae;padding-bottom:18px}
-         .column .con{border-top:1px dotted #ddd}
-         .column .pr20{width:165px;padding-right:5px}
-         .column .time{width:120px;line-height:28px;color:#666666;padding-left:10px}
-         .column .rtbox{width:557px;line-height:28px;color:#333333;padding:0 10px 0 5px;word-break:break-all}
-         .column .hai,.column .guan{line-height:18px;font-size:12px;color:#ffffff;vertical-align:text-top;margin-left:5px;padding:1px 3px;background-color:#3cbe7f;border-radius:2px}
-         .column .guan{background-color:#ff9f20}
-         .column .tag{display:inline-block;word-break:break-all;#display:inline;#zoom:1}
-         .column .all{color:#666;padding:10px 10px;background-color:#fafafa}
-         .column .tit{width:682px;height:40px;color:#666666;padding:0 10px;background-color:#f5f5f5}
-         .column .p15{padding:15px 0}
-         .column .p5{display:inline-block;color:#666666;padding:0 5px;#display:inline;#zoom:1}
-         .column .cell .skill{width:120px;font-size:14px;font-weight:bold;text-align:right;padding-right:5px}
-.column .cell .skbg,.column .cell .skco{display:inline-block;width:206px;height:18px;line-height:18px;font-size:12px;color:#ffffff;vertical-align:top;margin-top:6px;background-color:#dddddd;border-radius:20px;#display:inline;#zoom:1}
-         .column .cell .skco{width:196px;font-style:normal;margin-top:0;padding-left:10px;background-color:#ff9f20;z-index:3}
-         .column .sl .skco{width:147px}
-         .column .lh .skco{width:98px}
-         .column .yb .skco{width:49px}
-         .column .fbox strong{font-size:14px;font-weight:bold}
-         .column .cha{font-size:12px;font-weight:normal;color:#2d64b3;margin-left:5px}
-         .column .cha:hover{color:#ff6000}
-         .column .email{width:265px;color:#ffffff}
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>赵洪磊个人简历</title>
+  <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+  <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+  <style>
+    /* 定义辅助CSS来美化简历头部 */
+    body{
+      font-family: 'microsoft yahei',Arial,sans-serif;
+    }
 
-         .eng td,.eng .txt3,.eng .fbox strong{font-family:"Arial"}
-         .eng .txt1,.eng .rtbox,.eng .phd{width:557px;font-family:"Arial";line-height:28px}
-         .eng .txt2{width:206px}
-         .eng .txt4{width:145px}
-         .eng .cell .txt3{width:120px}
-         .eng .keys{width:110px;text-align:right;padding-right:15px}
-         .eng .pr20 .keys{width:50px}
-         .eng .keys2{width:80px}
-         .eng .phd{padding-left:135px}
-         .eng .time{width:110px;text-align:right;padding-right:10px}
-         .eng .email{width:170px} </style><table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column"><tbody><tr><td valign="top"><table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box1"><tbody><tr>
-<td class="hbox" align="middle"><img src="http://img01.51jobcdn.com/im/2016/resume/man.png" width="85" height="104" class="head"></td>
-<td><table cellspacing="0" cellpadding="0" border="0" class="infr"><tbody>
-<tr>
-<td colspan="2" class="name">赵洪磊</td>
-<td align="right" class="icard">
-                    ID:339178382</td>
-</tr>
-<tr>
-<td valign="top">
-<img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y1.png" width="20" height="20">观望有好机会会考虑</td>
-<td valign="top">
-<img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20" height="20">18311316619</td>
-<td valign="top"><table cellspacing="0" cellpadding="0" border="0" class="email"><tbody><tr>
-<td valign="top" width="25"><img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y3.png" width="20" height="20"></td>
-<td valign="top" class="txt4">zhl_198054@163.com</td>
-</tr></tbody></table></td>
-</tr>
-<tr><td valign="top" colspan="3"><p><img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y4.png" width="20" height="20">男<span class="p5">|</span>25 岁 (1991/06/19)<span class="p5">|</span>现居住北京-昌平区<span class="p5">|</span>2年工作经验
-                    </p></td></tr>
-</tbody></table></td>
-</tr></tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box2"><tbody><tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="tb2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt2"></td>
-</tr></thead>
-<tbody>
-<tr><td colspan="2" class="plate2">最近工作</td></tr>
-<tr>
-<td valign="top" class="keys">职位：</td>
-<td valign="top" class="txt2">软件工程师</td>
-</tr>
-<tr>
-<td valign="top" class="keys">公司：</td>
-<td valign="top" class="txt2">北京信雅乐达科技有限责任公司</td>
-</tr>
-<tr>
-<td valign="top" class="keys">行业：</td>
-<td valign="top" class="txt2">计算机软件</td>
-</tr>
-</tbody>
-</table></td>
-<td valign="top" class="tb2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt2"></td>
-</tr></thead>
-<tbody>
-<tr><td colspan="2" class="plate2">最高学历/学位</td></tr>
-<tr>
-<td valign="top" class="keys">专业：</td>
-<td valign="top" class="txt2">计算机科学与技术</td>
-</tr>
-<tr>
-<td valign="top" class="keys">学校：</td>
-<td valign="top" class="txt2">济宁医学院</td>
-</tr>
-<tr>
-<td valign="top" class="keys">学历/学位：</td>
-<td valign="top" class="txt2">本科</td>
-</tr>
-</tbody>
-</table></td>
-</tr></tbody></table></td></tr></tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">个人信息</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">微信号：
-                                  </td>
-<td valign="top" class="txt2">zhl_wutuobang</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">户口/国籍：</td>
-<td valign="top" class="txt2">菏泽</td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">身高：</td>
-<td valign="top" class="txt2">178cm</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">婚姻状况：</td>
-<td valign="top" class="txt2">未婚</td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">政治面貌：</td>
-<td valign="top" class="txt2">中共党员</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top">&nbsp;</td>
-</tr>
-</tbody></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">
-                目前年收入
-                <span>&nbsp;11万元
-                </span><span class="f12">（包含基本工资、补贴、奖金、股权收益等）</span>
-</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb1"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr></tr></tbody></table></td></tr></tbody></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">求职意向</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt1"></td>
-</tr></thead>
-<tbody><tr>
-<td valign="top" class="keys">个人标签：</td>
-<td valign="top" class="txt1">
-<span class="tag">Java工程师&nbsp;</span><span class="tag">web开发工程师</span>
-</td>
-</tr></tbody>
-</table></td></tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">期望薪资：</td>
-<td valign="top" class="txt2">15000-19999
-                                            元/月
-                                          </td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">地点：</td>
-<td valign="top" class="txt2"><span class="tag">北京</span></td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">职能：</td>
-<td valign="top" class="txt2"><span class="tag">软件工程师</span></td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">行业：</td>
-<td valign="top" class="txt2"><span class="tag">计算机软件</span></td>
-</tr></tbody></table></td>
-</tr>
-<tr>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">到岗时间：</td>
-<td valign="top" class="txt2">1个月内</td>
-</tr></tbody></table></td>
-<td class="tb2" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">工作类型：</td>
-<td valign="top" class="txt2">全职</td>
-</tr></tbody></table></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0">
-<thead style="height:0"><tr>
-<td valign="top" class="keys"></td>
-<td valign="top" class="txt1"></td>
-</tr></thead>
-<tbody><tr>
-<td valign="top" class="keys">自我评价：</td>
-<td valign="top" class="txt1">本人本科学历，计算机专业，有2年相关经验，精通Mybatis&#x20;Spring&#x20;SpringMVC等主流开源框架，熟悉J2EE体系结构，对面向对象、MVC有深刻理解。熟练使用Oracle、MySQL等数据库，熟悉数据的备份与还原，具有良好的SQL基础，熟练掌握表与视图的设计红工作，熟练掌握redis缓存技术；&#x20;<br>熟练使用ExtJs4.2&#x20;&#x20;Jquery&#x20;&#x20;EasyUI&#x20;&#x20;BootStrap等前端框架，熟练掌握JavaScript、CSS、HTML，Java等编程语言。熟练使用Tomcat应用服务器。熟悉PHP语言，能够利用Yii2框架进行代码开发工作。对Python语言有一定了解，熟悉其基本语言。<br><br>在2014年10月至2016年3月期间出差于民生银行开发总部&#x20;参与开发中高管系统，主要涉及中高管考核系统，中高管信息管理系统，中高管短信邮件系统；在民生银行期间使用Oracle数据，故熟悉存储过程的编写。<br>在2016年3月至今在一互联网公司参与催收系统的开发，内部后台管理系统的开发，数据中心系统开发，使用MySQL作为数据库，使用redis作为缓存技术。现公司的开发框架以及流程全部是&#x20;PHP的YII框架来组织整理前端页面，使用aJaxa去调用JavaAPI，JavaAPI主要采用Mybatis&#x20;+&#x20;Spring&#x20;+&#x20;SpringMVC&#x20;另外整合&#x20;Quarts任务调度&#x20;和&#x20;Drools规则引擎<br>催收系统：主要使用JQuery作为js开发语言<br>内部后台管理系统：主要使用easyUI作为js开发语言<br>数据中心：主要使用vue作为js的调度，样式使用&#x20;bootstrap,页面布局只要使用bootstrap的栅格系统<br><br>另外本人大学期间担任班长职务，具有良好的沟通能力，善于钻研，拥有良好的责任意识，及抗压能力。相信在未来的工作中，我将以充沛的精力，刻苦钻研的精神来努力工作，稳定地提高自己的工作能力，在为公司创造业绩的同时，努力实现自身价值。</td>
-</tr></tbody>
-</table></td></tr>
-</tbody></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">工作经验</td></tr>
-<tr><td class="tbb"><table cellspacing="0" cellpadding="0" border="0">
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/3-至今</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">软件工程师</strong><span class="p5">|</span><span>技术部</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>北京信雅乐达科技有限责任公司</span><span class="gray">&nbsp;[9个月]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">计算机软件<span class="p5">|</span>50-150人<span class="p5">|</span>民营公司</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">工作描述：</td>
-<td valign="top" class="txt1">在该公司，作为系统开发人员，主要负责的工作有：<br>1.&#x20;开发催收平台系统，针对下游各类催收公司，以及社会个人催收用户；<br>2.&#x20;开发后台管理系统，针对本公司人员使用的后台管理系统，主要功能包括委案的上传及案件各个生命周期的流转、财务结算、权限分配、系统数据的统计分析；<br>3.&#x20;开发数据中心，针对公司的催收数据进行各种数据的统计分析，进行数据的展示及结果的Excel导出，主要通过数据列表的展示<br>4.&#x20;参与商讨系统的功能实现方案，数据库的设计工作，系统业务需求的可行性；<br>5.&#x20;记录系统业务文档，对系统使用进行简单培训说明；<br>6.&#x20;对前台页面进行相关优化，包括页面js加入发布号用来避免页面缓存问题，页面静态化处理，静态文件的CND加速；<br>7.&#x20;创建表及视图，根据项目建立表之间的约束关系，主外键。<br><br>开发环境：<br>1.&#x20;项目前端主框架为&#x20;Yii2.0&#x20;+&#x20;JQuery&#x20;+&#x20;EasyUI，PHP开发环境为&#x20;XAMPP；后端主框架为：Spring&#x20;+&#x20;SpringMVC&#x20;+&#x20;Mybatis,Web服务器为Tomcat7.0，数据库为MySQL&#x20;;<br>2.&#x20;项目还使用了Drools规则引擎用来为员工绩效制定薪资规则，简单工作流程用于后台管理系统的财务结算流程，Querts用于Java定时任务；<br>3.&#x20;项目主要开发工具为&#x20;eclipse&#x20;+&#x20;Maven&#x20;，&#x20;PHPStorm9.0，Navicat&#x20;，Toad&#x20;For&#x20;Mysql，版本管理工具为&#x20;Git<br>技能掌握：<br>1.&#x20;熟练数据库(Mysql，Oracle)的使用以及先关SQL的编写，能够进行SQL优化及数据库的备份和还原工作；<br>2.&#x20;能够基于Spring&#x20;SpringMVC&#x20;Mybatis框架进行快速开发，熟悉掌握系统的各种事务操作；<br>3.&#x20;熟悉前端页面的开发，熟练掌握JavaScript及Jquery的相关DOM操作，熟练掌握HTML和css的前端页面的布局；<br>4.&#x20;熟练掌握MVC开发模式。<br>5.&#x20;熟练Java语言开发，熟练掌握多种设计模式</td>
-</tr></tbody></table></td></tr>
-<tr><td class="all" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="gray">
-                                  离职原因：公司不适合个人发展</td></tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2014/9-2016/3</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">web前端开发工程师</strong><span class="p5">|</span><span>BG2_BUBI_DUNC2_PS1</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>文思海辉技术有限公司</span><span class="gray">&nbsp;[1年6个月]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">计算机服务(系统、数据服务、维修)<span class="p5">|</span>10000人以上<span class="p5">|</span>外资(欧美)</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">工作描述：</td>
-<td valign="top" class="txt1">地点：顺义区民生银行总部开发基地<br>主要客户：民生银行总行的信息管理中心；&#x20;<br>主要工作：负责民生银行内部人员使用的系统；主要包括：中管信息管理系统，人员考核系统，调查问卷系统，民主测评系统。&#x20;工作任务：1、开发中管信息管理系统，负责后台数据的处理以及前台界面的展示工作，维护修改现有系统。<br>&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;2、对考核系统进行数据的配置，测试并解决系统出现的bug。<br>&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;3、独立开发调查问卷系统，包括设计后台数据库的表结构，以及前台页面的展示，后台逻辑的处理，额外功能的扩展。<br>&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;&#x20;4、开发民主测评的人员配置系统，解决手动配置人员的问题。&#x20;项目组使用框架：SpringMVC+MyBatis+Ext&#x20;Js4.2。<br>掌握技术：<br>&#x20;&#x20;&#x20;&#x20;项目组开发工具主要为MyEclipse8.6、Toad&#x20;for&#x20;Oracle/PLSQLDeveloper;<br>前端框架主要使用ExtJs&#x20;4.2及Echarts。少部分页面使用原生JavaScript及HTML；<br>项目数据库使用Oracle，工作包括Oracle数据库数据的备份还原，迁移数据库，表及视图的创建，存储过程的编写<br>项目系统主框架使用Spring整合Mybatis，使用Tomcat作为应用服务器<br>版本工具主要使用SVN</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2013/7-2013/11</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">其他</strong><span>
-                        (兼职)
-                      </span><span class="p5">|</span><span>实验室</span>
-</td>
-</tr>
-<tr><td class="phd tb1" colspan="2">
-<span>学校实验室</span><span class="gray">&nbsp;[4个月]
-                    </span>
-</td></tr>
-<tr><td class="phd tb1 gray2" colspan="2">计算机硬件</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">工作描述：</td>
-<td valign="top" class="txt1">在学校主要进行全国计算机ITAT杯参赛作品的设计，主要工作包括参赛作品的选择和参赛作品的开发。<br>1.初期首先确定最终的参赛作品为智能家居方向，确定开发硬件平台为8051单片机，列出购买清单(作品需要的一些列传感器，电阻电容原件)。<br>2.使用C语言作为开发语言，编写系统主程序，编写元器件以及传感器的各种驱动程序(主要包括烟雾传感器，温湿度传感器，光敏传感器，电机，红外传感器)<br>3.进入决赛后，带领团队去北京参加比赛，展示作品及作品功能和用途的解说</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">项目经验</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0">
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/10-至今</td>
-<td valign="top" class="rtbox">
-<strong>数据中心系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">北京信雅乐达科技有限责任公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">第三方</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/3-至今</td>
-<td valign="top" class="rtbox">
-<strong>催收系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">北京信雅乐达科技有限责任公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">该项目主要是催收平台相关业务，使用对象包括两类人员：下游催收公司(登录身份包括催收公司管理员，催收公司业务员)，根据不同人员的身份来显示不同的页面，以及催收功能，例如：催收只会显示个人负责的找债务人的案件，以及自己催回的款项，凭证上传。公司管理员就会负责案件的分配，案件的审核，本公司催收员所有的还款情况，补录所有案件凭条；催收个人(主要针对社会个人用户)，此类用户是针对社会个人进行开设的功能，功能相对单一，仅涉及抢单与退单功能，案件的定时强制轮转功能。<br>另外还包括商户注册功能，涉及企业资料，注册合同等一些列功能。<br>项目系统使用YII2.0+Xampp+Mybatis+Spring+springMVC+Tomcat+Maven&#x20;+Redis+JQuery+ajax+MySQL技术。另外还采用了querts自动执行轮询机制，来实现系统案件的自动轮转；由于催收员个人绩效规则多变，不固定，所以还引入drools规则引擎技术，实现催收员绩效计算统计。</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">责任描述：</td>
-<td valign="top" class="txt1">催收系统：<br>在项目中主要担任系统开发工作，涉及的模块有催收个人模块的全部功能，参与其系统功能的实现方式的探讨，及实现方案的定制。<br>模块功能主要涉及：<br>1）案件流转功能（对催收员手中的未催收案件进行自动撤回，对催收员手里多以一定数量的案件进行撤回操作）。<br>2）凭证上传功能，<br>3）案件的下载功能<br>4）增加催记，为每一条呼叫记录进行增加一条催记，对同债务的人案件进行催记情况的更新<br>5）管理员界面进行案件分配功能。<br>个人参与模块的开发包括前台页面的设计，以及后台Java程序逻辑的处理，SQL的编写以及优化，针对个人功能决定是否进行静态页面的CDN优化。</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2016/3-至今</td>
-<td valign="top" class="rtbox">
-<strong>催收后台管理系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">北京信雅乐达科技有限责任公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">催收后台管理系统：<br>此项目的主要使用人员是公司商务部，以及公司财务部门；一方面是服务于催收系统，另一方面就是进行财务结算，账单的生成，进行入账和出账，对接上下游公司(委案方和催收方)的账单。<br>系统的主要功能包括：<br>1)委案管理：委案的流转控制，包括案件的上传、审核、分配、撤回、结清、结案、停催，错误案件的删除;委案更新，费率设置，委案跟进等一些列功能。<br>2)还款管理：查看凭证，凭证后台补录，还款确认，及错误还款进行删除驳回功能；案件产生回款的批量导入(Excel)及单条导入(针对每条委案)。<br>3)商户管理：包括委案方与催收方的案件整理，案件分析，公司合同的录入与更新，商户公司评级，注册用户的审核。<br>4)统计分析：主要针对公司以及案件、回款率等等的一些分析，报表的展示功能。<br>5)账单管理：针对上下游公司的对接，账单案件的在线生成与审批功能，采用工作流模式JBPM<br>6)系统工具及权限设定：主要包括后台管理系统人员权限的分配，以及密码的修改，权限菜单的添加。还有对催收系统的常量进行设置<br>项目后台主框架采用公司的固定框架&#x20;YII2.0+Xampp+Mybatis+Spring+springMVC+Tomcat+Maven&#x20;,前台展示使用jQuery+easyUI等技术。事务采用Spring的aop声明式事务，使用拦截器。系统后台的MVC流程使用注解的方式实现。</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">责任描述：</td>
-<td valign="top" class="txt1">催收后台管理系统<br>在项目中主要担任系统开发工作，涉及模块有委案管理模块的案件流转功能，还款管理模块的凭证处理相关模块，账单管理模块。参与上述功能的研发工作。<br>主要包括上述功能的UI界面设计，后台逻辑的处理，数据库字段的设计及实现，功能代码的开发工作。</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2015/7-2016/2</td>
-<td valign="top" class="rtbox">
-<strong>高管考核系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">文思海辉技术有限公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">该项目主要是Toad&#x20;10.5、PL-SQL&#x20;Deverloper、myeclipse&#x20;8.6(开发工具)<br>Windows7(硬件环境)<br>Oracle、Tomcat&#x20;7.0&#x20;、jdk1.7.0_67(软件环境)系统主要针对民生银行高级管理人员进行评分和绩效考核，系统主要的使用人群就是民生银行的高级管理人员，所有系统的设计必须简洁明了，便于操作。<br>所以系统采用的是以一种点赞的方式来考核，清晰明了。但是系统会给每一个题项给予一个分值权重。</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">责任描述：</td>
-<td valign="top" class="txt1">1、系统功能的开发，测试，以及bug的解决<br>2、考核数据的配置与检验<br>3、系统的最后测试，以及数据的检验</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2015/7-2015/7</td>
-<td valign="top" class="rtbox">
-<strong>调查问卷系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">文思海辉技术有限公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">系统采用前台展示不记名的问答形式，系统具有答题实时保存功能，并且提交答题之后不可以在进入系统<br>这个项目主要是为民生银行内部员工意见采集，及公司员工个人发展意愿调查来服务。系统展现方式为不记名问答形式，系统具有答题过程中实时保存功能，中途退出系统，所答题目再次重新展示，规定系统答题时间，并且一旦提交答题后无法在进入系统。<br>系统采用Oracle数据库，系统后端处理主要采用的技术有Spring，SpringMVC，mybatis，Log4j，系统事物使用Spring的声明式事务管理。前端展示主要是使用HTML，CSS，jQuery，JavaScript。</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">责任描述：</td>
-<td valign="top" class="txt1">由于该项目功能及用途相对单一，仅包括问卷系统的实现及后期问卷结果报表展示。所以该项目由我本人独立负责研发工作。包括数据库表格的创建，数据库索引字段的设计，界面展现方式的样式，以及后期统计结果的展现，报表的展示，都有我本人完成。<br>技术上在当前项目的架构基础上开发，前台采用Html&#x20;,CSS,&#x20;JQuery，Ajax，JavaScript等技术，后台使用Mybatis,&#x20;Servlet,Spring整合SpringMVC架构等。</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2014/9-2015/7</td>
-<td valign="top" class="rtbox">
-<strong>中管信息管理系统</strong>&nbsp;<span class="guan">已关联</span>
-</td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">所属公司：</td>
-<td valign="top" class="txt1">文思海辉技术有限公司</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">项目描述：</td>
-<td valign="top" class="txt1">中管信息管理系统类似于公司内部OA系统，功能较普通OA系统稍简单，主要涉及以下几个方面:<br>1.民生银行总行各部门机构人员资料的维护工作<br>2.民生银行总行内部部门的组织架构展示及调整<br>3.民生银行总行内部员工的个人信息维护，及职务变动信息更新<br>4.提供各部门组织机构的报表展示，提供部门人员关系下载，及员工职务变动情况的展示。<br>系统主要数据库使用Oracle11G，后台使用项目固定框架&#x20;Spring，Mybatis，servlet整合SpringMVC，前台主要使用ExtJs4.2进行系统的快速开发，少数页面使用原生的JavaScript，及HTML，CSS进行开发，系统能够较好的兼容各大主流浏览器，根据银行人员的使用情况，系统对IE浏览器的兼容较好</td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">责任描述：</td>
-<td valign="top" class="txt1">在本项目中我主要参与了前期部分功能的开发，以及后期的测试维护工作。<br>主要是对银行数据进行维护与备份工作，生产库数据的迁移以及系统数据库的权限管理。<br>另外还负责系统文档的书写，以及系统中业务要点的记录。<br>系统版本控制工具选择SVN，还负责部署生产库系统。</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</table></td></tr>
-</tbody></table>
-<table xmlns="" class="box"><tbody>
-<tr><td class="plate1">教育经历</td></tr>
-<tr><td class="tba"><table cellspacing="0" cellpadding="0" border="0"><tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2011/9-2015/7</td>
-<td valign="top" class="rtbox"><strong>济宁医学院</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2">本科<span class="p5">|</span>计算机科学与技术</td></tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">专业描述：</td>
-<td valign="top" class="txt1">主要专业课程：javaEE，JavaSE，Oracle系统开发，ASP.NET，嵌入式开发系统，单片机，ARM，计算机网络原理，数据结构，计算机操作系统,&#x20;C语言程序设计，visual&#x20;C++等课程</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr></table></td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">在校情况</td></tr>
-<tr><td class="tbb">
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">校内荣誉</td></tr>
-<tr><td class="tb3"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2014/12</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">全国信息技术应用大赛（嵌入式开发）</strong><span>（二等奖）</span>
-</td>
-</tr></tbody></table></td></tr>
-</tbody></table>
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">校内职务</td></tr>
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="time">2011/9-2015/7</td>
-<td valign="top" class="rtbox"><strong class="txt3">班长</strong></td>
-</tr>
-<tr><td class="tb1" colspan="2"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="keys">职务描述：</td>
-<td valign="top" class="txt1">负责班级内部相关事项，以及日常班级活动的组织</td>
-</tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</tbody></table>
-</td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">
-              技能特长
-              <span class="f12">（包括IT技能、语言能力、证书、成绩、培训经历）</span>
-</td></tr>
-<tr><td class="tbb">
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">技能/语言</td></tr>
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb2 cell lh" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Python</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">良好</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">PHP</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">JavaScript</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Java</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">HTML5</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell yb" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Linux</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">一般</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Oracle</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">MySQL</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell lh" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">VUE</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">良好</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">CSS</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td></tr><tr><td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">Redis</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td>
-<td class="tb2 cell sl" valign="top"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td class="skill"><strong class="txt3">英语</strong></td>
-<td valign="top"><span class="skbg"><span class="skco">熟练</span></span></td>
-</tr></tbody></table></td></tr></tbody></table></td></tr>
-</tbody></table>
-<table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">证书</td></tr>
-<tr><td class="tb3"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2014/12</td>
-<td valign="top" class="rtbox"><strong class="txt3">大学英语四级</strong></td>
-</tr></tbody></table></td></tr>
-<tr><td class="tb3 con"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
-<td valign="top" class="time">2014/2</td>
-<td valign="top" class="rtbox">
-<strong class="txt3">单片机应用工程师</strong><span>
-                      （初级）
-                    </span>
-</td>
-</tr></tbody></table></td></tr>
-</tbody></table>
-</td></tr>
-</tbody></table>
-<table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box"><tbody>
-<tr><td class="plate1">附加信息</td></tr>
-<tr><td class="tbb"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr><td class="tit">附件</td></tr>
-<tr><td class="p15"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb1"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="keys">附件：</td>
-<td valign="top" class="txt3"><strong>催收业务系统</strong></td>
-</tr>
-<tr>
-<td valign="top" class="keys">附件链接：</td>
-<td valign="top" class="txt1">http://101.201.41.60/user/login</td>
-</tr>
-<tr>
-<td valign="top" class="keys">附件描述：</td>
-<td valign="top" class="txt1">登陆名：hou123456/123456<br>litong/litong<br>yanmin/yanmin</td>
-</tr>
-</tbody></table></td></tr></tbody></table></td></tr>
-<tr><td class="p15 con"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="tb1"><table cellspacing="0" cellpadding="0" border="0"><tbody>
-<tr>
-<td valign="top" class="keys">附件：</td>
-<td valign="top" class="txt3"><strong>催收后台管理系统</strong></td>
-</tr>
-<tr>
-<td valign="top" class="keys">附件链接：</td>
-<td valign="top" class="txt1">http://101.201.41.60:100/sys/login</td>
-</tr>
-<tr>
-<td valign="top" class="keys">附件描述：</td>
-<td valign="top" class="txt1">登陆名：zhaohonglei/zhaohonglei</td>
-</tr>
-</tbody></table></td></tr></tbody></table></td></tr>
-</tbody></table></td></tr>
-</tbody></table></td></tr></tbody></table></body></html>
+    .cvheader{
+      border-bottom: 1px solid #DFDFDF;
+      padding-top:30px;
+      padding-bottom:20px;
+    }
+
+    .cvheader h1{
+      margin:0;
+    }
+
+    .address{
+      background: #efb73e;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    /* 定义辅助CSS来美化简历主体 */
+
+    .cvbody{
+      padding-top: 50px; 
+    }
+
+    .cbox{
+      margin-bottom: 30px;
+      color: #FFF;
+      padding: 50px;
+    }
+
+    /* 定义cbox颜色 */
+    .green{
+      background: #2ecc71;
+    }
+
+    .orange{
+      background: orange;
+    }
+
+    .red{
+      background: #dd4814;
+    }
+
+    .bbox{
+      border: 1px solid #DFDFDF;
+      border-radius: 5px;
+      margin-bottom:30px;
+      padding: 50px;
+    }
+
+    .footer{
+      margin: 30px 0 30px;
+      padding: 50px;
+      background: #CCC;
+      color: #FFF;
+    }
+</style>
+</head>
+<body>
+  <!-- 定义简历的头部 //-->
+
+<div class="container">
+  <div class="row cvheader">
+    <div class="col-lg-7 col-md-7 col-xs-12">
+      <!--  添加颜色//-->
+      <h1 class="text-primary">joyRay</h1>
+      <!--  添加图标 //-->
+      <p><span class="glyphicon glyphicon-paperclip"></span> java工程师 && web工程师</p>
+    </div>
+    
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <div class="row">
+        
+        <div class="col-lg-4 col-md-4 col-xs-4">
+          <p id="contact" class="address text-center">联系</p>
+        </div>
+        
+        <div class="col-lg-8 col-md-8 col-xs-8">
+          <p><span class="glyphicon glyphicon-envelope"></span> zhl_198054@163.com</p>
+          <p><span class="glyphicon glyphicon-earphone"></span> 18311316619</p>
+          <p><span class="glyphicon glyphicon-road"></span> 北京市昌平区</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-2 col-xs-12">
+      <p>
+        <!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
+        <img data-toggle="tooltip" data-placement="left" id="avatar" title="我是赵洪磊" class="img-responsive img-rounded" src="./img/avatar_2.jpg" alt="">
+       </p>
+    </div>
+  </div>
+</div>
+
+<!-- 定义简历的主体部分 //-->
+
+<div class="container">
+  <div class="row cvbody">
+    
+    <!-- 这里定义两个区域，布局定义如下：//-->
+    
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    
+      <div class="row">
+        <div class="cbox green">
+          <h4>个人介绍</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus asperiores eum consequatur hic rem earum repudiandae dicta! Est officiis similique fugiat quod quibusdam rerum ipsum eos soluta tempore cupiditate! Accusantium?
+          </p>
+        </div>
+        <div class="cbox red">
+          <h4>个人技能</h4>
+          <p>
+            <!-- 这里使用Bootstrap3的组件添加技能 //-->
+            
+            HTML/CSS/Javascript
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width:80%"></div>
+            </div>
+            
+            Java/J2EE
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" style="width:90%"></div>
+            </div>
+            
+            数据库
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width:80%"></div>
+            </div>
+            
+            Photoshop/UI
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width:50%"></div>
+            </div>
+          </p>
+        </div>
+        <div class="cbox orange">
+          <h4>语言水平</h4>
+          <p>
+            <canvas id="en" width="150" height="150" class="pull-left"></canvas>
+            <canvas id="zh" width="150" height="150" class="pull-right"></canvas>
+            <p class="clearfix"></p>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- 为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现//-->
+    <div class="col-lg-1 col-md-1 col-xs-12"></div>
+    
+    <div class="col-lg-5 col-md-5 col-xs-12">
+    
+      <div class="row">
+        <div class="bbox">
+          <h4>教育背景</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione enim adipisci minima perspiciatis ad nesciunt iure asperiores voluptatem neque aperiam molestias cupiditate facilis a eveniet iste sapiente ab repellendus dignissimos.</p>
+        </div>
+        <div class="bbox">
+          <h4>工作经验</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolorem mollitia repellendus. Magni laudantium placeat repudiandae tempore iure deleniti obcaecati. Architecto delectus doloremque quo. Dicta ratione vero eos pariatur itaque.</p>
+        </div>
+        <div class="bbox">
+          <h4>个人爱好</h4>
+          <p>
+            <span class="glyphicon glyphicon-tree-deciduous"></span> 骑马
+            <span class="glyphicon glyphicon-plane"></span> 旅游
+            <p><span class="glyphicon glyphicon-cutlery"></span> 美食</p>
+            <p><span class="glyphicon glyphicon-music"></span> 音乐</p>
+          </p>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- 定义简历页底 //-->
+<div class="container">
+  <div class="row"><div class="footer text-center">后续有待更新中</div></div>
+</div>
+
+<!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
+<script type='text/javascript' src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+/*Javascript源代码*/
+
+$(function(){
+  $('#contact').popover({placement:'bottom', container: 'body', html:true, content:'<p>QQ: 1432789914</p><p>微信：zhl_wutuobang</p>'});
+  $('#avatar').tooltip({'placement':'bottom'});
+  
+    $.getScript('http://www.chartjs.org/assets/Chart.js',function(){
+      
+      var zhdata = [{
+            label: '中文水平',
+            value: 90,
+            highlight: "#FFC870",
+            color: "#F7464A"
+        }, {
+            value: 10,
+            color: "#EEEEEE"
+        }
+        ]
+
+        var zhoptions = {
+            animation: true,
+            segmentShowStroke : false
+        };
+
+        var c = $('#zh');
+        var ct = c.get(0).getContext('2d');
+        
+        var zhChart = new Chart(ct).Doughnut(zhdata, zhoptions);
+
+    
+      var endata = [{
+            label: '英文水平',
+            value: 80,
+            highlight: "#5AD3D1",
+            color: "#4D5360"
+        }, {
+        value: 20,
+        color: "#EEEEEE"
+        }
+        ]
+
+        var enoptions = {
+            animation: true,
+            segmentShowStroke : false
+        };
+
+        var c = $('#en');
+        var ct = c.get(0).getContext('2d');
+        
+        var enchart = new Chart(ct).Doughnut(endata, enoptions);
+    });
+
+});
+
+</script>
+</body>
+</html>
