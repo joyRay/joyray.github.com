@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>赵洪磊个人简历</title>
   <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./stylesheets/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"> -->
-  <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="./stylesheets/bootstrap-theme.min.css" rel="stylesheet">
   <style>
     /* 定义辅助CSS来美化简历头部 */
     body{
@@ -197,64 +197,12 @@
 </div>
 
 <!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
-<script type='text/javascript' src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- <script type='text/javascript' src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script> -->
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="./javascript/jquery.min.1.11.1.js"></script>
+<script src="./javascript/bootstrap.min.3.3.0.js"></script>
+<script src="./javascript/personVita.js"></script>
 
-<script>
-/*Javascript源代码*/
 
-$(function(){
-  $('#contact').popover({placement:'bottom', container: 'body', html:true, content:'<p>QQ: 1432789914</p><p>微信：zhl_wutuobang</p>'});
-  $('#avatar').tooltip({'placement':'bottom'});
-  
-    $.getScript('http://www.chartjs.org/assets/Chart.js',function(){
-      
-      var zhdata = [{
-            label: '中文水平',
-            value: 90,
-            highlight: "#FFC870",
-            color: "#F7464A"
-        }, {
-            value: 10,
-            color: "#EEEEEE"
-        }
-        ]
-
-        var zhoptions = {
-            animation: true,
-            segmentShowStroke : false
-        };
-
-        var c = $('#zh');
-        var ct = c.get(0).getContext('2d');
-        
-        var zhChart = new Chart(ct).Doughnut(zhdata, zhoptions);
-
-    
-      var endata = [{
-            label: '英文水平',
-            value: 80,
-            highlight: "#5AD3D1",
-            color: "#4D5360"
-        }, {
-        value: 20,
-        color: "#EEEEEE"
-        }
-        ]
-
-        var enoptions = {
-            animation: true,
-            segmentShowStroke : false
-        };
-
-        var c = $('#en');
-        var ct = c.get(0).getContext('2d');
-        
-        var enchart = new Chart(ct).Doughnut(endata, enoptions);
-    });
-
-});
-
-</script>
 </body>
 </html>
